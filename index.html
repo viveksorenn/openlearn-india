@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="OpenLearn India — free, community-built learning practice for everyone.">
+  <title>OpenLearn India | Learn a little every day</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="OpenLearn India home"><span class="brand-mark">O</span><span>OpenLearn <b>India</b></span></a>
+    <div class="header-actions">
+      <button id="languageBtn" class="ghost-btn" type="button">हिन्दी</button>
+      <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> FREE LEARNING • OPEN SOURCE</div>
+      <h1 id="heroTitle">Small steps.<br><em>Big progress.</em></h1>
+      <p id="heroText">Build your knowledge every day with short English, grammar and general knowledge practice.</p>
+      <a class="primary-btn" href="#practice" id="startBtn">Start practising <span>→</span></a>
+      <div class="hero-note">Made for curious learners, everywhere.</div>
+    </section>
+
+    <section class="stats" aria-label="Learning categories">
+      <div><strong>01</strong><span>Vocabulary</span></div>
+      <div><strong>02</strong><span>Grammar</span></div>
+      <div><strong>03</strong><span>General knowledge</span></div>
+    </section>
+
+    <section id="practice" class="practice-section">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR DAILY PRACTICE</div><h2 id="practiceTitle">Choose a topic</h2></div>
+        <p id="practiceHint">Answer a question and get instant feedback.</p>
+      </div>
+      <div class="topic-tabs" role="group" aria-label="Choose a quiz topic">
+        <button class="tab active" data-topic="vocabulary">Vocabulary</button>
+        <button class="tab" data-topic="grammar">Grammar</button>
+        <button class="tab" data-topic="gk">General knowledge</button>
+      </div>
+      <article class="quiz-card">
+        <div class="quiz-meta"><span id="questionCount">QUESTION 1</span><span id="score">SCORE: 0</span></div>
+        <h3 id="question">Loading question…</h3>
+        <div id="options" class="options"></div>
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+        <div class="quiz-footer"><button id="nextBtn" class="primary-btn" disabled>Next question →</button><button id="resetBtn" class="text-btn">Reset score</button></div>
+      </article>
+    </section>
+
+    <section class="mission">
+      <div class="eyebrow">THE OPENLEARN IDEA</div>
+      <h2>Learning should be <em>within reach.</em></h2>
+      <p>OpenLearn India is an early-stage open-source learning project. The aim is to make simple practice tools freely available and improve them with help from the community.</p>
+      <a href="CONTRIBUTING.md" class="text-link">How to contribute ↗</a>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> OpenLearn India</span><span>Open source • Built for learning</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
